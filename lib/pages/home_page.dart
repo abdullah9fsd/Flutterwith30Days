@@ -7,12 +7,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Abdullah"),
+      appBar: AppBar(
+        title: const Text("Abdullah App"),
+      ),
+      body: Center(
+        child: Container(
+          child: Text("Welcome to $name App. Learn in $day days"),
         ),
-        body: Center(
-            child: Container(
-          child: Text("Welcome To $name App. Learn in $day days"),
-        )));
+      ),
+      drawer: Drawer(),
+    );
   }
 }
